@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Вариант 10</title>
+</head>
+<body>
+
+<h2>Вариант №10 — Список покупок</h2>
+
+<input id="buy" placeholder="Введите покупку">
+<button onclick="add()">Добавить</button>
+<button onclick="clearList()">Очистить</button>
+
+<ol id="list"></ol>
+
+<script>
+let items
