@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Заметки</title>
+</head>
+<body>
+
+<h1>Блок заметок</h1>
+
+<input id="note" placeholder="Введите заметку">
+<button onclick="addNote()">Добавить</button>
+
+<ul id="notes"></ul>
+
+<script>
+function addNote() {
+    let text = document.getElementById("note").value;
+
+    if (text === "") return;
+
+    let li = document.createElement("li");
+    li.innerHTML = text + ' <button onclick="this.parentElement.remove()">Удалить</button>';
+
+    document.getElementById("notes").appendChild(li);
+    document.getElementById("note").value = "";
+}
+</script>
+
+</body>
+</html> 
