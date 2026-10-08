@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторная работа №6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Лабораторная работа №6</h1>
+
+<h2>1. Заметки</h2>
+
+<input id="note" placeholder="Введите заметку">
+<button id="add">Добавить</button>
+
+<ul id="notes"></ul>
+
+
+<h2>2. Теги</h2>
+
+<input id="tag" placeholder="Введите тег">
+<p>Нажмите Enter для добавления</p>
+
+<div id="tags"></div>
+
+
+<h2>3. Тест</h2>
+
+<p id="question"></p>
+<div id="answers"></div>
+
+<button id="next">Следующий вопрос</button>
+
+<p id="result"></p>
+
+
+<script src="script.js"></script>
+</body>
+</html>
