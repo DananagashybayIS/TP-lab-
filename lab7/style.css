@@ -1,1 +1,112 @@
-
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fb;
+    color: #252b3a;
+}
+header {
+    text-align: center;
+    padding: 35px 15px;
+    background: linear-gradient(135deg, #6c63ff, #a78bfa);
+    color: white;
+}
+header h1 {
+    margin-bottom: 10px;
+}
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    background: white;
+}
+.nav-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ecebff;
+    color: #4540a0;
+    cursor: pointer;
+    font-size: 15px;
+}
+.nav-btn:hover {
+    background: #dcd9ff;
+}
+.nav-btn.active {
+    background: #6c63ff;
+    color: white;
+}
+main {
+    max-width: 1000px;
+    min-height: 400px;
+    margin: 30px auto;
+    padding: 20px;
+}
+h2 {
+    color: #5148c8;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+.card {
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+}
+.card h3 {
+    margin-top: 0;
+}
+button,
+input {
+    font-family: inherit;
+}
+.action-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    background: #6c63ff;
+    color: white;
+    cursor: pointer;
+}
+.action-btn:hover {
+    background: #5148c8;
+}
+input {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+.message {
+    margin: 15px 0;
+    font-weight: bold;
+}
+.empty {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+    background: #252b3a;
+    color: white;
+}
+@media (max-width: 600px) {
+    main {
+        padding: 12px;
+    }
+    .nav-btn {
+        flex: 1 1 100%;
+    }
+}
