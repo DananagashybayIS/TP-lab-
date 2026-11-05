@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 8 — Поиск публикаций</title>
+    <link rel="stylesheet" href="task8.css">
+    <script src="task8.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Поиск публикаций</h1>
+        <p>Средний уровень — задание №8</p>
+        <button id="loadButton">Загрузить публикации</button>
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Введите заголовок для поиска"
+            >
+            <button id="searchButton">Найти</button>
+        </div>
+        <p id="status" role="status">Сначала загрузите публикации.</p>
+        <div id="results"></div>
+    </main>
+</body>
+</html>
