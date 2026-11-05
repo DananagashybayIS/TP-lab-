@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 16 — Статистика задач</title>
+    <link rel="stylesheet" href="task16.css">
+    <script src="task16.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Статистика задач</h1>
+        <p>Повышенный уровень — задание №16</p>
+        <div class="controls">
+            <label for="userFilter">Выберите пользователя:</label>
+            <select id="userFilter">
+                <option value="all">Все пользователи</option>
+                <option value="1">Пользователь 1</option>
+                <option value="2">Пользователь 2</option>
+                <option value="3">Пользователь 3</option>
+                <option value="4">Пользователь 4</option>
+                <option value="5">Пользователь 5</option>
+                <option value="6">Пользователь 6</option>
+                <option value="7">Пользователь 7</option>
+                <option value="8">Пользователь 8</option>
+                <option value="9">Пользователь 9</option>
+                <option value="10">Пользователь 10</option>
+            </select>
+            <button id="loadButton">Загрузить задачи</button>
+        </div>
+        <p id="status" role="status">Нажмите кнопку для загрузки данных.</p>
+        <section class="statistics">
+            <div class="stat-card">
+                <h2 id="totalCount">0</h2>
+                <p>Всего задач</p>
+            </div>
+            <div class="stat-card completed">
+                <h2 id="completedCount">0</h2>
+                <p>Выполнено</p>
+            </div>
+            <div class="stat-card pending">
+                <h2 id="pendingCount">0</h2>
+                <p>Не выполнено</p>
+            </div>
+        </section>
+        <h2>Список задач</h2>
+        <div id="todoList"></div>
+    </main>
+</body>
+</html>
